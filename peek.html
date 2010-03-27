@@ -1,0 +1,115 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<title>Quick Peek - Broadcast CMS</title>
+</head>
+
+<body>
+<script type="text/javascript">
+//Updates Block - Hovers/Hides
+jQuery(function(){
+	jQuery(".chunk_body").mouseenter(function() {
+		//jQuery(this).find('p.upd_pic').css({'display' : 'none'});
+		jQuery(this).find('h2 a').css({'color' : '#fff'});
+		jQuery(this).find('p.upd_pic img').css({'border' : '3px solid #FFFF00'});
+		if (jQuery(this).parent().parent().parent().parent().parent().parent().is('.pink')){
+			jQuery(this).find('h2 a').css({'color' : '#fff'});
+			jQuery(this).find('p.upd_cat span.upd_meta').css({'display' : 'block'});
+			jQuery(this).find('p.upd_cat span.upd_meta').css({'color' : '#FFFF00'});
+		} else if (jQuery(this).parent().parent().is('.yellow')) {
+			jQuery(this).find('h2 a').css({'color' : '#fff'});
+			jQuery(this).find('p.upd_cat span.upd_meta').css({'display' : 'none'});
+		} else if (jQuery(this).parent().parent().is('.blue')) {
+			jQuery(this).find('h2 a').css({'color' : '#fff'});
+		}
+		jQuery(this).find('p').css({'color' : '#fff'});
+		jQuery(this).find('p a').css({'color' : '#ffff00'});
+    });
+	jQuery(".chunk_body").mouseleave(function() {
+		//jQuery(this).find('p.upd_pic').css({'display' : 'block'});
+		jQuery(this).find('p.upd_cat span.upd_meta').css({'display' : 'none'});
+		jQuery(this).find('p.upd_pic img').css({'border' : '3px solid #FFF'});
+		jQuery(this).find('h2 a').css({'color' : '#191919'});
+		if (jQuery(this).parent().parent().parent().parent().parent().parent().is('.pink')){
+			jQuery(this).find('p a').css({'color' : '#666666'});
+		} else if (jQuery(this).parent().parent().parent().parent().parent().parent().parent().is('.pink')){
+			jQuery(this).find('p a').css({'color' : '#666666'});
+		} else if (jQuery(this).parent().parent().is('.yellow')) {
+			jQuery(this).find('p a').css({'color' : '#666666'});
+		} else if (jQuery(this).parent().parent().is('.blue')) {
+			jQuery(this).find('p a').css({'color' : '#666666'});
+		}
+    });
+});
+jQuery(document).ready(function() {
+	jQuery.easing.def = "easeInOutSine"; 
+	jQuery('.chunk_body, .post_intro, .block, .box_update_item, .comment').bind('mouseenter',function(){
+		jQuery(this).stop().animate({
+			backgroundColor: "#373737" }, 200)
+	}).bind('mouseleave',function(){
+		jQuery(this).stop().animate({
+			backgroundColor: "#fff" }, 300)
+	});
+});
+
+//Font replacement
+jQuery(function() {
+	//Cufon
+		Cufon.replace('.peek_body h1', {
+		fontFamily: 'HelveticaNeue77', 
+		hover:true 
+	});
+	
+	Cufon.replace('.peek .updates h1', {
+		fontFamily: 'HelveticaNeue57',
+		hover:true 
+	});
+});
+</script>
+	<div class="peek">
+	
+		<div class="peek_title">
+			<p class="pt_left">Quick Peek</p>
+			<p class="pt_right"><a href="javascript: void(0);" onclick="self.parent.tb_remove();" class="close">Close</a></p>
+		</div><!--/Title-->
+		
+		<div class="peek_body">
+			<img src="media/metrofm/images/examples/news_thumb.jpg" width="292" height="151" alt="" />
+			<h1>Ten Tips For Making Your Business Greener</h1>
+			<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, to tam rem aperia,eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt . </p>
+			<p>Nemo enim ipsam voluptatem quia voluptas sit asper natur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. </p>
+			<p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora. <a href="#">Read More</a></p>
+		</div><!--/Body-->
+		
+		<div class="updates pink">
+			<div id="slider">    
+				<h1>Updates</h1>
+	            <div class="scroll">
+	                <div class="scroll_container">
+		                <div class="panel" id="one">
+							<div class="chunk_tray no-bord">
+								<div class="chunk_item">
+									<div class="chunk_body">
+										<p class="upd_pic"><a href="news-detail.html"><img src="media/metrofm/images/examples/update_thumb.jpg" width="107" height="60" alt="" /></a></p>
+										<p class="upd_cat"><span class="upd_catname"><a href="news.html">Entertainment</a></span><span class="upd_meta">75 Likes | <a href="news-detail#comments">42 Comments</a></span></p>
+										<h2><a href="news-detail.html">Korn Rocks The MTV Music Awards</a></h2>
+									</div>
+								</div>
+								<div class="chunk_item">
+									<div class="chunk_body">
+										<p class="upd_pic"><a href="news-detail.html"><img src="media/metrofm/images/examples/update_thumb.jpg" width="107" height="60" alt="" /></a></p>
+										<p class="upd_cat"><span class="upd_catname"><a href="news.html">Entertainment</a></span><span class="upd_meta">75 Likes | <a href="news-detail.html#comments">42 Comments</a></span></p>
+										<h2><a href="news-detail.html">Korn Rocks The MTV Music Awards</a></h2>
+									</div>
+								</div>
+							</div><!--/tray-->
+						</div>
+	                </div>
+	            </div>
+       		</div><!--/slider-->
+		</div><!--/Updates-->
+	
+	</div><!--/PEEK-->
+</body>
+</html>

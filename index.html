@@ -1,0 +1,442 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Broadcast CMS</title>
+	<meta name="description" content="" />
+	<meta name="keywords" content="" />
+	<link rel="stylesheet" type="text/css" href="media/metrofm/includes/reset.css" />
+	<link rel="stylesheet" type="text/css" href="media/metrofm/includes/style-positions.css" />
+	<link rel="stylesheet" type="text/css" href="media/metrofm/includes/styles.css" />
+	<!--Lib-->
+	<script type="text/javascript" src="media/metrofm/includes/jquery-1.3.2.min.js"></script>
+	<script type="text/javascript" src="media/metrofm/includes/jquery.easing.1.3.js"></script>
+	<script type="text/javascript" src="media/metrofm/includes/jquery.color.js"></script>
+	<!--PNG Fix-->
+	<script type="text/javascript" src="media/metrofm/includes/jquery.pngFix.js"></script>
+	<!--Promo-->
+	<script type="text/javascript" src="media/metrofm/includes/jquery.coda-slider-2.0.js"></script>
+	<link rel="stylesheet" type="text/css" href="media/metrofm/includes/coda-slider-2.0.css">
+	<!--Thickbox-->
+	<script type="text/javascript" src="media/metrofm/includes/thickbox.js"></script>
+	<link rel="stylesheet" type="text/css" href="media/metrofm/includes/thickbox.css" />
+	<link rel="stylesheet" type="text/css" href="media/metrofm/includes/modal.css" />
+	<!--Validation-->
+	<script type="text/javascript" src="media/metrofm/includes/jquery.validate.js"></script>
+	<script type="text/javascript" src="media/metrofm/includes/cmxforms.js"></script>
+	<!--Gallery-->
+	<script type="text/javascript" src="media/metrofm/includes/jquery.galleriffic.js"></script>
+	<script type="text/javascript" src="media/metrofm/includes/jcarousellite.js"></script>
+	<!--Font Replacement-->
+	<script type="text/javascript" src="media/metrofm/includes/cufon.js"></script>
+	<script type="text/javascript" src="media/metrofm/includes/HelveticaNeue77_800.font.js"></script>
+	<script type="text/javascript" src="media/metrofm/includes/HelveticaNeue_LT_57_Cn_700.font.js"></script>
+	<!--General-->
+	<script type="text/javascript" src="media/metrofm/includes/routines.js"></script>
+</head>
+
+<body>
+ <script src="http://static.ak.connect.facebook.com/js/api_lib/v0.4/FeatureLoader.js.php/en_US" type="text/javascript"></script><script type="text/javascript">FB.init("a3fa74dcb091d47e9942e054d5625d47");</script><div class="main"><a id="top"></a>
+<div class="wrapper">
+
+	<div class="mast_head">
+	
+		<div class="logo"><a href="index.html"></a></div>
+		
+		<div class="logged">
+			<div class="logged_status">
+				<form id="frmStatusUpdate" action="#" method="post">
+					<p class="status_update"><input type="text" name="status_update" value="Update your status here..." onfocus="if (this.value == 'Update your status here...') {this.value = '';}" onblur="if (this.value == '') {this.value = 'Update your status here...';}" /></p>
+					<p class="status_update_btn"><input type="submit" name="submit" value="" /></p>
+				</form>
+			</div>
+			<p class="logged_avatar"><a href="user-profile.html"><img src="media/metrofm/images/examples/avatar_logged.jpg" width="35" height="35" alt="" /></a></p>
+			<p class="logged_info">
+				<span class="logged_name">Hello Stranger</span><br />
+				<span class="logged_links"><a href="login_pop.html?height=370&amp;width=540" class="thickbox">Sign in</a> | <a href="register_pop.html?height=630&amp;width=515" class="thickbox">Sign up</a></span>
+			</p>
+		</div>
+		
+		<div class="nav">
+			<ul>
+			<li class="on"><a href="index.html">Home</a></li>
+			<li><a href="shows-djs.html">DJ's &amp; Shows</a></li>
+			<li><a href="chart.html">Charts</a></li>
+			<li><a href="competitions.html">Competitions</a></li>
+			<li><a href="news.html">News</a></li>
+			<li><a href="events.html">Events</a></li>
+			<li><a href="galleries.html">Galleries</a></li>
+			<li><a href="reviews.html">Reviews</a></li>
+			</ul>
+			<div class="search">
+				<form id="frmSearch" action="search-results.html" method="post">
+				<p class="field"><input type="text" name="search_term" value="Search" onfocus="if (this.value == 'Search') {this.value = '';}" onblur="if (this.value == '') {this.value = 'Search';}" /></p>
+				<p><input type="submit" value="" class="btn" /></p>
+				</form>
+			</div>
+		</div>
+		
+	</div><!--/MAST_HEAD-->
+	
+	<div class="mast_body">
+	
+		<div class="banner">
+			<p class="banner_thumb"><img src="media/metrofm/images/examples/banner_thumb.jpg" width="164" height="92" alt="" /></p>
+			<p class="banner_info">
+				<span class="onair">On Air: 16:00 - 19:00</span><br />
+				<span class="showtitle">Paul's Crack O' Dawn</span><br />
+				<span class="showdjs">with PAUL MTIRARA & SAKINA KAMWENDO</span>
+				<span class="nowplaying"><strong>Now Playing:</strong> Katy Perry - You're hot 'n then you're cold</span>
+			</p>
+			<ul>
+			<li class="listen_live"><a href="javascript: openPlayer('listen-live.html');"></a></li>
+			<li class="studio_cam"><a href="javascript: openCam('studio-cam.html');"></a></li>
+			<li class="my_blog"><a href="dj-blog.html"></a></li>
+			</ul>
+		</div><!--/Banner-->
+		
+		<div class="mast_left no-bg">
+		
+			<div class="coda-slider-wrapper">
+				<div class="coda-slider preload coda-slider-1">
+					<div class="panel">
+						<div class="panel-wrapper">
+							<div class="content">
+								<h2 class="main-title">Kanye West: Man of the Hour</h2>
+								<span>Lorem ipsum dolor sit amet, cons ectetur adipisicing elit, sed do eiu et dolore elit... <a href="news-detail.html">View Details</a></span>
+							</div>
+							<img src="media/metrofm/images/examples/promo1.jpg" width="630" height="260" alt="" />
+						</div>
+					</div>
+					<div class="panel">
+						<div class="panel-wrapper">
+							<div class="content">
+								<h2 class="main-title">Kanye West: Man of the Hour</h2>
+								<span>Lorem ipsum dolor sit amet, cons ectetur adipisicing elit, sed do eiu et dolore elit... <a href="news-detail.html">View Details</a></span>
+							</div>
+							<img src="media/metrofm/images/examples/promo2.jpg" width="630" height="260" alt="" />
+						</div>
+					</div>
+					<div class="panel">
+						<div class="panel-wrapper">
+							<div class="content">
+								<h2 class="main-title">Kanye West: Man of the Hour</h2>
+								<span>Lorem ipsum dolor sit amet, cons ectetur adipisicing elit, sed do eiu et dolore elit... <a href="news-detail.html">View Details</a></span>
+							</div>
+							<img src="media/metrofm/images/examples/promo3.jpg" width="630" height="260" alt="" />
+						</div>
+					</div>
+					<div class="panel">
+						<div class="panel-wrapper">
+							<div class="content">
+								<h2 class="main-title">Kanye West: Man of the Hour</h2>
+								<span>Lorem ipsum dolor sit amet, cons ectetur adipisicing elit, sed do eiu et dolore elit... <a href="news-detail.html">View Details</a></span>
+							</div>
+							<img src="media/metrofm/images/examples/promo4.jpg" width="630" height="260" alt="" />
+						</div>
+					</div>
+				</div><!--/coda-slider -->
+			</div><!--/coda-slider-wrapper -->
+			
+			<div class="updates pink">
+				<div id="slider">    
+					<h1>Latest News</h1>
+					<div class="scroll_nav">
+		          	    <ul class="navigation">
+		                <li><a href="#one"></a></li>
+		                <li><a href="#two"></a></li>
+		                <li><a href="#three"></a></li>
+		          	    </ul>
+					</div>
+		            <div class="scroll">
+		                <div class="scroll_container">
+			                <div class="panel" id="one">
+								<div class="chunk_item">
+									<div class="chunk_body_first">
+										<p class="upd_pic"><a href="news-detail.html"><img src="media/metrofm/images/examples/in_the_spotlight.jpg" width="164" height="92" alt="" /><span class="spotlight_text">In the spotlight</span></a></p>
+										<p class="upd_cat">
+											<span class="upd_catname"><a href="news.html">Entertainment</a></span>
+											<span class="upd_meta">
+												<a href="news-detail#comments" class="update_meta_comments">42</a>
+												<span class="update_meta_like">75</span>
+												<a href="peek.html?height=600&amp;width=720" class="thickbox update_meta_peek">Peek</a>
+											</span>
+										</p>
+										<h2><a href="news-detail.html">Lily Allen Sings and Judges At The MTV Music Awards</a></h2>
+									</div>
+								</div>
+								<div class="chunk_item">
+									<div class="chunk_body">
+										<p class="upd_pic"><a href="news-detail.html"><img src="media/metrofm/images/examples/update_thumb.jpg" width="107" height="60" alt="" /></a></p>
+										<p class="upd_cat">
+											<span class="upd_catname"><a href="news.html">Entertainment</a></span>
+											<span class="upd_meta">
+												<a href="news-detail#comments" class="update_meta_comments">42</a>
+												<span class="update_meta_like">75</span>
+												<a href="peek.html?height=600&amp;width=720" class="thickbox update_meta_peek">Peek</a>
+											</span>
+										</p>
+										<h2><a href="news-detail.html">Korn Rocks The MTV Music Awards</a></h2>
+									</div>
+								</div>
+								<div class="chunk_item">
+									<div class="chunk_body">
+										<p class="upd_pic"><a href="post.html"><img src="media/metrofm/images/examples/update_thumb.jpg" width="107" height="60" alt="" /></a></p>
+										<p class="upd_cat">
+											<span class="upd_catname"><a href="news.html">Entertainment</a></span>
+											<span class="upd_meta">
+												<a href="news-detail#comments" class="update_meta_comments">42</a>
+												<span class="update_meta_like">75</span>
+												<a href="peek.html?height=600&amp;width=720" class="thickbox update_meta_peek">Peek</a>
+											</span>
+										</p>
+										<h2><a href="news-detail.html">Korn Rocks The MTV Music Awards</a></h2>
+									</div>
+								</div>
+								<div class="chunk_item">
+									<div class="chunk_body">
+										<p class="upd_pic"><a href="news-detail.html"><img src="media/metrofm/images/examples/update_thumb.jpg" width="107" height="60" alt="" /></a></p>
+										<p class="upd_cat">
+											<span class="upd_catname"><a href="news.html">Entertainment</a></span>
+											<span class="upd_meta">
+												<a href="news-detail#comments" class="update_meta_comments">42</a>
+												<span class="update_meta_like">75</span>
+												<a href="peek.html?height=600&amp;width=720" class="thickbox update_meta_peek">Peek</a>
+											</span>
+										</p>
+										<h2><a href="news-detail.html">Korn Rocks The MTV Music Awards</a></h2>
+									</div>
+								</div>
+								<div class="chunk_item">
+									<div class="chunk_body">
+										<p class="upd_pic"><a href="post.html"><img src="media/metrofm/images/examples/update_thumb.jpg" width="107" height="60" alt="" /></a></p>
+										<p class="upd_cat">
+											<span class="upd_catname"><a href="news.html">Entertainment</a></span>
+											<span class="upd_meta">
+												<a href="news-detail#comments" class="update_meta_comments">42</a>
+												<span class="update_meta_like">75</span>
+												<a href="peek.html?height=600&amp;width=720" class="thickbox update_meta_peek">Peek</a>
+											</span>
+										</p>
+										<h2><a href="news-detail.html">Korn Rocks The MTV Music Awards</a></h2>
+									</div>
+								</div>
+								<div class="chunk_item">
+									<div class="chunk_body">
+										<p class="upd_pic"><a href="post.html"><img src="media/metrofm/images/examples/update_thumb.jpg" width="107" height="60" alt="" /></a></p>
+										<p class="upd_cat">
+											<span class="upd_catname"><a href="news.html">Entertainment</a></span>
+											<span class="upd_meta">
+												<a href="news-detail#comments" class="update_meta_comments">42</a>
+												<span class="update_meta_like">75</span>
+												<a href="peek.html?height=600&amp;width=720" class="thickbox update_meta_peek">Peek</a>
+											</span>
+										</p>
+										<h2><a href="news-detail.html">Korn Rocks The MTV Music Awards</a></h2>
+									</div>
+								</div>
+							</div>
+		                </div>
+		            </div>
+					<div class="clearfix"></div>
+	       		</div><!--/slider-->
+				<p class="updates_more"><a href="news.html">View all News Items</a></p>
+			</div><!--/Updates-->
+			
+			<div class="updates align-right events yellow">
+				<h1>Competitions</h1>
+				<div class="chunk_item">
+					<div class="chunk_body_first">
+						<p class="upd_pic"><a href="news-detail.html"><img src="media/metrofm/images/examples/in_the_spotlight.jpg" width="164" height="92" alt="" /><span class="spotlight_text">Featured Competition</span></a></p>
+						<p class="upd_cat">
+							<span class="upd_catname"><a href="news.html">Entertainment</a></span>
+							<span class="upd_meta">
+								<a href="news-detail#comments" class="update_meta_comments">42</a>
+								<span class="update_meta_like">75</span>
+								<a href="peek.html?height=600&amp;width=720" class="thickbox update_meta_peek">Peek</a>
+							</span>
+						</p>
+						<h2><a href="news-detail.html">Lily Allen Sings and Judges At The MTV Music Awards</a></h2>
+					</div>
+				</div>
+				<div class="chunk_item">
+					<div class="chunk_body">
+						<p class="upd_cat"><span class="upd_catname"><a href="news.html">24 October 2009</a></span><span class="upd_meta">Competition Title Heading goes here.</span></p>
+						<h2><a href="news-detail.html">Korn Rocks The MTV Music Awards</a></h2>
+					</div>
+				</div>
+				<div class="chunk_item">
+					<div class="chunk_body">
+						<p class="upd_cat"><span class="upd_catname"><a href="news.html">Entertainment</a></span><span class="upd_meta">75 Likes | <a href="news-detail#comments">42 Comments</a> | <a href="peek.html?height=600&amp;width=720" class="thickbox">Peek &raquo;</a></span></p>
+						<h2><a href="news-detail.html">Korn Rocks The MTV Music Awards</a></h2>
+					</div>
+				</div>
+				<p class="updates_more"><a href="competitions.html">View all Competitions</a></p>
+			</div><!--/Updates-->
+			
+			<div class="updates align-right events blue">
+				<h1>Upcoming Events</h1>
+				<div class="chunk_item">
+					<div class="chunk_body_first">
+						<p class="upd_pic"><a href="news-detail.html"><img src="media/metrofm/images/examples/in_the_spotlight.jpg" width="164" height="92" alt="" /><span class="spotlight_text">Featured Event</span></a></p>
+						<p class="upd_cat">
+							<span class="upd_catname"><a href="news.html">Entertainment</a></span>
+							<span class="upd_meta">
+								<a href="news-detail#comments" class="update_meta_comments">42</a>
+								<span class="update_meta_like">75</span>
+								<a href="peek.html?height=600&amp;width=720" class="thickbox update_meta_peek">Peek</a>
+							</span>
+						</p>
+						<h2><a href="news-detail.html">Lily Allen Sings and Judges At The MTV Music Awards</a></h2>
+					</div>
+				</div>
+				<div class="chunk_item">
+					<div class="chunk_body">
+						<p class="upd_cat"><span class="upd_catname"><a href="news.html">Entertainment</a></span><span class="upd_meta">75 Likes | <a href="news-detail#comments">42 Comments</a> | <a href="peek.html?height=600&amp;width=720" class="thickbox">Peek &raquo;</a></span></p>
+						<h2><a href="news-detail.html">Korn Rocks The MTV Music Awards</a></h2>
+					</div>
+				</div>
+				<div class="chunk_item">
+					<div class="chunk_body">
+						<p class="upd_cat"><span class="upd_catname"><a href="news.html">Entertainment</a></span><span class="upd_meta">75 Likes | <a href="news-detail#comments">42 Comments</a> | <a href="peek.html?height=600&amp;width=720" class="thickbox">Peek &raquo;</a></span></p>
+						<h2><a href="news-detail.html">Korn Rocks The MTV Music Awards</a></h2>
+					</div>
+				</div>
+				<p class="updates_more"><a href="events.html">View all Upcoming Events</a></p>
+			</div><!--/Updates-->
+		
+		</div><!--/MAST_LEFT-->
+		
+		<div class="mast_right">
+		
+			<div class="mrec"><a href="#advert"><img src="media/metrofm/images/examples/ad.jpg" width="300" height="250" alt="" /></a></div><!--/MRec-->
+			
+			<div class="updates friends purple">
+				<h1>Your Friends <span>(254)</span></h1>
+				<ul>
+				<li><a href="user-friends-profile.html"><img src="media/metrofm/images/examples/avatar_friends.jpg" width="50" height="50" alt="" /></a></li>
+				<li><a href="user-friends-profile.html"><img src="media/metrofm/images/examples/avatar_friends.jpg" width="50" height="50" alt="" /></a></li>
+				<li><a href="user-friends-profile.html"><img src="media/metrofm/images/examples/avatar_friends.jpg" width="50" height="50" alt="" /></a></li>
+				<li><a href="user-friends-profile.html"><img src="media/metrofm/images/examples/avatar_friends.jpg" width="50" height="50" alt="" /></a></li>
+				<li><a href="user-friends-profile.html"><img src="media/metrofm/images/examples/avatar_friends.jpg" width="50" height="50" alt="" /></a></li>
+				<li><a href="user-friends-profile.html"><img src="media/metrofm/images/examples/avatar_friends.jpg" width="50" height="50" alt="" /></a></li>
+				<li><a href="user-friends-profile.html"><img src="media/metrofm/images/examples/avatar_friends.jpg" width="50" height="50" alt="" /></a></li>
+				<li><a href="user-friends-profile.html"><img src="media/metrofm/images/examples/avatar_friends.jpg" width="50" height="50" alt="" /></a></li>
+				<li><a href="user-friends-profile.html"><img src="media/metrofm/images/examples/avatar_friends.jpg" width="50" height="50" alt="" /></a></li>
+				<li><a href="user-friends-profile.html"><img src="media/metrofm/images/examples/avatar_friends.jpg" width="50" height="50" alt="" /></a></li>
+				</ul>
+				<p class="updates_more"><a href="friends.html" class="view">View all Friends</a><a href="friends-find.html" class="find">Find more Friends</a></p>
+			</div><!--/Updates-->
+			
+			<div class="updates global green">
+				<h1>Update Stream</h1>
+				<ul class="global_updates_nav">
+				<li class="dj_updates"><a href="javascript: void();" rel="#dj_updates">DJ's</a></li>
+				<li class="friend_updates"><a href="javascript: void();" rel="#friend_updates">Your Friends</a></li>
+				</ul>
+				<div class="global_updates" id="dj_updates">
+					<div class="update">
+						<p class="update_avatar"><a href="#"><img src="media/metrofm/images/examples/avatar_friends.jpg" width="50" height="50" alt="" /></a></p>
+						<p class="update_content">
+							<a href="user-friends-profile.html" class="title">Michael Cera</a> 
+							<span class="update_text">looking fwd to seeing France vs Brazil at Green Point Stadium. <a href="#">http://digg.com/Eajd83</a></span>
+							<span class="update_meta">3 Hours Ago via Twitter | <a href="#" class="update_meta_like">5</a> | <a href="#" class="update_meta_comments">2</a></span>
+							<span class="update_btns">
+								<a href="#" class="update_btn_like">I Like</a>
+								<a href="#" class="update_btn_reply">Reply</a>
+								<a href="#" class="update_btn_retweet">Retweet</a>
+								<a href="#" class="update_btn_dm">Direct Message</a>
+							</span>
+						</p>
+					
+					</div>
+					<div class="update">
+						<p class="update_avatar"><a href="#"><img src="media/metrofm/images/examples/avatar_friends.jpg" width="50" height="50" alt="" /></a></p>
+						<p class="update_content">
+							<a href="user-friends-profile.html" class="title">Michael Cera</a> 
+							<span class="update_text">looking fwd to seeing France vs Brazil at Green Point Stadium. <a href="#">http://digg.com/Eajd83</a></span>
+							<span class="update_meta">3 Hours Ago via Twitter | <a href="#" class="update_meta_like">5</a> | <a href="#" class="update_meta_comments">2</a></span>
+							<span class="update_btns">
+								<a href="#" class="update_btn_like">I Like</a>
+								<a href="#" class="update_btn_reply">Reply</a>
+								<a href="#" class="update_btn_retweet">Retweet</a>
+								<a href="#" class="update_btn_dm">Direct Message</a>
+							</span>
+						</p>
+					</div>
+					<div class="update">
+						<p class="update_avatar"><a href="#"><img src="media/metrofm/images/examples/avatar_friends.jpg" width="50" height="50" alt="" /></a></p>
+						<p class="update_content">
+							<a href="user-friends-profile.html" class="title">Michael Cera</a> 
+							<span class="update_text">looking fwd to seeing France vs Brazil at Green Point Stadium. <a href="#">http://digg.com/Eajd83</a></span>
+							<span class="update_meta">3 Hours Ago via Twitter | <a href="#" class="update_meta_like">5</a> | <a href="#" class="update_meta_comments">2</a></span>
+							<span class="update_btns">
+								<a href="#" class="update_btn_like">I Like</a>
+								<a href="#" class="update_btn_reply">Reply</a>
+								<a href="#" class="update_btn_retweet">Retweet</a>
+								<a href="#" class="update_btn_dm">Direct Message</a>
+							</span>
+						</p>
+					</div>
+					<div class="update">
+						<p class="update_avatar"><a href="#"><img src="media/metrofm/images/examples/avatar_friends.jpg" width="50" height="50" alt="" /></a></p>
+						<p class="update_content">
+							<a href="user-friends-profile.html" class="title">Michael Cera</a> 
+							<span class="update_text">looking fwd to seeing France vs Brazil at Green Point Stadium. <a href="#">http://digg.com/Eajd83</a></span>
+							<span class="update_meta">3 Hours Ago via Twitter | <a href="#" class="update_meta_like">5</a> | <a href="#" class="update_meta_comments">2</a></span>
+							<span class="update_btns">
+								<a href="#" class="update_btn_like">I Like</a>
+								<a href="#" class="update_btn_reply">Reply</a>
+								<a href="#" class="update_btn_retweet">Retweet</a>
+								<a href="#" class="update_btn_dm">Direct Message</a>
+							</span>
+						</p>
+					</div>
+				</div>
+				<p class="updates_more"><a href="news.html" class="newer">Newer</a><a href="#" class="twitter">Follow me on Twitter</a><a href="news.html" class="older">Older</a></p>
+				<p class="clearfix"></p>
+			</div><!--/Updates-->
+		
+		</div><!--/MAST_RIGHT-->
+		
+	</div><!--/MAST_BODY-->
+	
+</div><!--/MAIN-->
+</div><!--/WRAPPER-->
+	
+<div class="mast_foot">
+
+	<div class="logo bottom_logo"><a href="index.html"></a></div>
+	
+	<div class="legal">
+		<p>&copy; 2009 SABC All rights reserved</p>
+		<p>Metro FM logos, graphics, designs, page headers, icons and buttons are the property of MetroFM.</p>
+		<p>Please read our <a href="terms.html">Terms and Conditions</a>  |  <a href="privacy.html">Privacy Policy</a>  |  <a href="#">Site Map</a>  |  <a href="#">Rate Card</a></p>
+	</div>
+	
+	<div class="link_list">
+		<ul>
+		<li><a href="shows-djs.html">Shows &amp; DJs</a></li>
+		<li><a href="javascript: openPlayer('listen-live.html');">Listen Live</a></li>
+		<li><a href="chart.html">Music Chart</a></li>
+		</ul>
+		<ul>
+		<li><a href="competitions.html">Competitions</a></li>
+		<li><a href="news.html">News Updates</a></li>
+		<li><a href="events.html">Events Calendar</a></li>
+		</ul>
+		<ul>
+		<li><a href="contact.html">Contact Us</a></li>
+		<li><a href="about.html">About Us</a></li>
+		<li><a href="advertise.html">Advertise</a></li>
+		</ul>
+		<ul>
+		<li><a href="galleries.html">Galleries</a></li>
+		<li><a href="reviews.html">Reviews</a></li>
+		</ul>
+	</div>
+
+</div><!--/MAST_FOOT-->
+</body>
+</html>

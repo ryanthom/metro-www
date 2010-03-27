@@ -1,0 +1,52 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html>
+<head>
+	<title>Login - Broadcast CMS</title>
+</head>
+
+<body>
+	 <script src="http://static.ak.connect.facebook.com/js/api_lib/v0.4/FeatureLoader.js.php/en_US" type="text/javascript"></script><script type="text/javascript">FB.init("a3fa74dcb091d47e9942e054d5625d47");</script>	<script type="text/javascript">
+	jQuery().ready(function() {
+		jQuery("#frmLogin").validate();
+		jQuery(".shift").click(function () {
+	      jQuery(this).css({'background-position' : '0px -27px'});
+		  jQuery(this).find("input").css({'color' : '#000'});
+	    });
+		jQuery(".shift").select(function () {
+	      jQuery(this).css({'background-position' : '0px -27px'});
+		  jQuery(this).find("input").css({'color' : '#000'});
+	    });
+		jQuery(".shift input").blur(function () {
+	      jQuery(".shift").css({'background-position' : '0px 0px'});
+		  jQuery(this).css({'color' : '#000'});
+	    });
+	});
+	</script>
+	<div class="modal">
+	
+		<div class="modal_title">
+			<h1>Sign In</h1>
+			<p><a href="javascript: void(0);" onclick="tb_remove()" id="TB_closeWindowButton" class="close">Close</a></p>
+			<p class="modal_intro">Not Registered? <a href="register_pop.html?height=630&amp;width=515" class="thickbox">Create your free profile now</a></p>
+		</div>
+		
+		<form id="frmLogin" action="#" class="cmxform">
+			<div class="modal_row">
+				<label for="alias">Alias/Email:</label>
+				<p class="text_input shift"><input type="text" id="alias" name="alias" class="required" minlength="4" /></p>
+			</div>
+			<div class="modal_row">
+				<label for="password">Password:</label>
+				<p class="text_input shift"><input type="password" id="password" name="password" class="required" /></p>
+			</div>
+			<ul class="modal_buttons">
+				<li><input type="image" src="media/metrofm/images/forms/btn-sign_in.jpg" name="submit" /></li>
+				<li class="mb_link"><a href="forgotten-password_pop.html?height=260&amp;width=499" class="thickbox">Forgot your Password?</a></li>
+			</ul>
+			<div class="facebook_connect_short">Facebook user? Sign in using Facebook: <fb:login-button v="2" size="medium">Connect</fb:login-button></div>
+		</form>
+	
+	</div><!--/MODAL-->
+</body>
+</html>

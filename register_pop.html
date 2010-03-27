@@ -1,0 +1,78 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html>
+<head>
+	<title>Register - Broadcast CMS</title>
+</head>
+
+<body>
+ <script src="http://static.ak.connect.facebook.com/js/api_lib/v0.4/FeatureLoader.js.php/en_US" type="text/javascript"></script><script type="text/javascript">FB.init("a3fa74dcb091d47e9942e054d5625d47");</script>	<script type="text/javascript">
+	jQuery().ready(function() {
+		jQuery("#frmRegister").validate();
+		jQuery(".shift").click(function () {
+	      jQuery(this).css({'background-position' : '0px -27px'});
+		  jQuery(this).find("input").css({'color' : '#000'});
+	    });
+		jQuery(".shift").select(function () {
+	      jQuery(this).css({'background-position' : '0px -27px'});
+		  jQuery(this).find("input").css({'color' : '#000'});
+	    });
+		jQuery(".shift input").blur(function () {
+	      jQuery(".shift").css({'background-position' : '0px 0px'});
+		  jQuery(this).css({'color' : '#fff'});
+	    });
+	});
+	</script>
+	<div class="modal">
+	
+		<div class="modal_title">
+			<h1>Create your Free Profile</h1>
+			<p><a href="javascript: void(0);" onclick="tb_remove()" id="TB_closeWindowButton" class="close">Close</a></p>
+			<p class="modal_intro">Sign up using the form below.</p>
+		</div>
+		
+		<p class="thanks">Thank you for submitting your message.</p>
+		
+		<form id="frmRegister" action="#" class="cmxform">
+			<div class="modal_row">
+				<label for="alias">Alias:</label>
+				<p class="text_input shift"><input type="text" id="alias" name="alias" class="required" minlength="4" /></p>
+				<p class="text_idea">(Must be at least 4 characters, letters and numbers only)</p>
+			</div>
+			<div class="modal_row">
+				<label for="firstname">Name:</label>
+				<p class="text_input_short shift"><input type="text" id="firstname" name="firstname" class="required" /></p>
+				<p class="text_input_short no-marg shift"><input type="text" id="surname" name="surname" class="required" /></p>
+				<p class="text_idea">(First Name and Last)</p>
+			</div>
+			<div class="modal_row">
+				<label for="email">Email:</label>
+				<p class="text_input shift"><input type="text" id="email" name="email" class="required email" /></p>
+				<p class="text_idea">(We will send you account notices here - so make sure its good.)</p>
+			</div>
+			<div class="modal_row">
+				<label for="spamcode">Human?</label>
+				<p class="text_input_short shift"><input type="text" id="spamcode" name="spamcode" class="required" /></p>
+				<p class="text_input_short no-marg no-bg"><span><img src="media/metrofm/images/examples/spam.jpg" width="55" height="27" alt="" /></span><span><img src="media/metrofm/images/forms/btn-question.jpg" width="17" height="29" alt="" /></span></p>
+				<p class="text_idea">(Spam prevention code.)</p>
+			</div>
+			<div class="modal_row">
+				<label for="email_alerts">Opt Ins:</label>
+				<p class="checkbox_short"><input type="checkbox" id="email_alerts" name="email_alerts" /> Send Me Email Alerts</p>
+				<p class="checkbox_short no-marg"><input type="checkbox" id="sms_alerts" name="sms_alerts" /> Send Me SMS Alerts</p>
+			</div>
+			<div class="modal_row check">
+				<label for="legal">Legal Stuff:</label>
+				<p class="checkbox"><input type="checkbox" id="legal" name="legal" class="required" /> I agree to the website terms of use</p>
+			</div>
+			<ul class="modal_buttons">
+				<li><input type="image" src="media/metrofm/images/forms/btn-sign_in.jpg" name="submit" /></li>
+				<li><a href="javascript: document.getElementById('frmRegister').reset();"><img src="media/metrofm/images/forms/btn-clear.jpg" alt="" /></a></li>
+				<li class="mb_link"><a href="terms.html">Terms &amp; Conditions</a></li>
+			</ul>
+			<div class="facebook_connect_short">You can sign up using your Facebook info: <fb:login-button v="2" size="medium">Connect</fb:login-button></div>
+		</form>
+	
+	</div><!--/MODAL-->
+</body>
+</html>

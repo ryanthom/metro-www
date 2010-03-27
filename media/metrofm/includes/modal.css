@@ -1,0 +1,93 @@
+p a.close { width: 48px; padding: 0px 21px 0px 0px; background: url('../images/icon-modal_close.gif') right no-repeat; color: #191919!important; }
+
+/* ----------------------------------------------------------------------------------------------------------------------- */
+/*	MODALS												   																   */
+
+	.modal { width: 423px; float: left; padding: 25px 30px 30px 30px; position: relative; background: #fff; color: #000; border: 8px solid #E2E2E2; text-align: left; }
+	.modal_title { width: 423px; float: left; }
+		.modal_title h1 { float: left; padding: 0px; margin: 0px; font-size: 19px; font-weight: bold; line-height: 26px!important; color: #191919; }
+		.modal_title p { float: right; padding: 0px; margin: 0px; line-height: 25px; }
+		.modal_title p.modal_intro { width: 410px; float: left; padding: 10px 0px 15px 0px; font-size: 12px; line-height: 18px; font-weight: bold; color: #191919; }
+		.modal_title p.modal_intro a { color: #191919!important; }
+		
+			.modal_row { width: 423px; float: left; padding: 0px 0px 10px 0px; position: relative; }
+			.modal_row label { width: 80px; float: left; line-height: 29px; font-weight: bold; color: #191919; }
+			
+			.modal_row p.text_input { width: 340px; float: left; height: 27px; background: url('../images/forms/bg-modal_input.jpg') no-repeat; position: relative;  }
+			.modal_row p.text_input input { width: 324px; height: 20px; float: left; padding: 5px 8px 0px 8px; color: #292929; background: transparent!important; }
+			.modal_row p.text_idea { width: 340px; float: left; padding: 2px 0px 0px 82px; font-size: 11px; color: #666; position: relative; }
+			
+			.modal_row p.text_input_short { width: 166px; float: left; margin: 0px 8px 0px 0px; height: 27px; background: url('../images/forms/bg-modal_input_short.jpg') no-repeat; display: inline; position: relative; }
+			.modal_row p.text_input_short input { width: 150px; height: 20px; float: left; padding: 5px 8px 0px 8px; color: #292929; background: transparent!important; }
+			.modal_row p.text_input_short span { float: left; padding: 0px 15px 0px 0px; }
+			
+			.modal_row p.checkbox { width: 332px; float: left; margin: 0px 8px 0px 0px; padding: 5px 0px 0px 0px; color: #191919; position: relative; }
+			.modal_row p.checkbox_short { width: 166px; float: left; margin: 0px 8px 0px 0px; padding: 5px 0px 0px 0px; color: #191919; position: relative;  }
+			
+			.modal_row div.offending_comment { width: 340px; float: left; }
+			.modal_row p.label { width: 80px; float: left; padding: 8px 0px 0px 0px; font-weight: bold; color: #191919; }
+			
+			.modal_buttons { width: 348px; float: left; list-style-type: none; padding: 0px 0px 0px 82px; }
+			.modal_buttons li { float: left; padding: 10px 10px 0px 0px; }
+			.modal_buttons li.mb_link { width: 150px; float: right; text-align: right; }
+			.modal_buttons li.mb_link a { line-height: 28px; font-size: 11px; color: #191919!important; }
+			.facebook_connect_short { width: 368px; float: left; padding: 5px 28px; margin: 20px 0 0 0; background: #e2e2e2; display: block; font-size: 13px; font-weight: bold; color: #191919; line-height: 27px; }
+		.modal_video { width: 423px; float: left; background: #e2e2e2; }
+
+/* ----------------------------------------------------------------------------------------------------------------------- */
+/*	FORM VALIDATION ERROR MESSAGES												   																   */
+			
+	#frmLogin label.error,
+	#frmRegister label.error,
+	#frmRegister .check label.error,
+	#frmForgottenPassword label.error,
+	#frmReportAbuse label.error { width: 195px!important; display: none; color: #FF0022!important; font-size: 10px; font-weight: normal; text-align: right; position: absolute; top: 0px; right: 5px; }
+
+/* ----------------------------------------------------------------------------------------------------------------------- */
+/*	FORM BUSY MESSAGES												   																   */
+			
+	#frmLogin label.busy,
+	#frmRegister label.busy,
+	#frmRegister .check label.busy,
+	#frmForgottenPassword label.busy,
+	#frmReportAbuse label.busy { width: 16px!important; display: none; text-align: right; position: absolute; top: 7px; right: 5px; width: 16px; height: 16px; background:transparent url(../images/loadingsmall.gif) no-repeat scroll 0 0; }
+
+/* ----------------------------------------------------------------------------------------------------------------------- */
+/*	QUICK PEEK											   																   */
+
+	.peek { width: 640px; float: left; padding: 20px; position: relative; background: #e2e2e2; color: #000; border: 8px solid #e2e2e2; text-align: left; overflow: hidden; z-index:1500; }
+		.peek_title { width: 640px; float: left; padding: 0px 0px 10px 0px; }
+			.peek_title p.pt_left { float: left; font-size: 11px; color: #191919; }
+			.peek_title p.pt_right { float: right; }
+		.peek_body { width: 640px; float: left; }
+		.peek_body img { float: right; padding: 0px 0px 10px 10px; }
+		.peek_body h1 { line-height: 22px!important; padding: 0px 0px 15px 0px; color: #191919; }
+		.peek_body p { padding: 0px 0px 15px 0px; }
+		
+	/* Updates Block */
+	.peek .updates { width: 640px; float: left; margin: 20px 0px 0px 0px; background: #242424; }
+	.peek .updates h1 { float: left; padding: 0px 21px 0px 14px; background: url('../images/arrow-title.gif') right center no-repeat; }
+		.peek #slider { width: 640px; margin: 0px auto; position: relative; overflow: hidden; }
+		.peek .scroll { width: 640px; overflow: auto; overflow-x: hidden; position: relative; float: left; }
+		.peek .scroll_container { float: left; background: #fff; }
+		.peek .scroll_nav { width: 66px; margin: 0px auto; position: relative; top: 0px; } /* edit for re-skinning */
+		.peek ul.navigation { list-style: none; height: 9px; padding: 18px 15px 0px 15px; }
+		.peek ul.navigation li { width: 12px; height: 6px; display: inline; float: left; overflow: hidden; }
+		.peek ul.navigation a { width: 6px; height: 6px; display: block; margin: 0px 3px; background: url('../images/home/dot.jpg') no-repeat; }
+		.peek ul.navigation a.selected { background-position: 0px -6px; }
+		.peek .scrollButtons { position: absolute; cursor: pointer; }
+		.peek .scrollButtons.left { width: 5px; height: 9px; top: 16px; left: 0px; position: absolute; background: url('../images/home/arrow-prev.jpg') no-repeat; z-index: 10; }
+		.peek .scrollButtons.right { width: 5px; height: 9px; top: 16px; right: 0px; position: absolute; background: url('../images/home/arrow-next.jpg') no-repeat; z-index: 10; }
+		.peek .hide { display: none; }
+		/* panel with update chunks */
+		.peek .panel { width: 640px; float: left; overflow: hidden; }
+			.peek .chunk_tray { width: 660px; float: left; }
+			.peek .chunk_item { width: 330px; float: left; }
+				.peek .chunk_body { width: 282px; min-height: 60px; padding: 14px; float: left; display: block; background: #fff; }
+				.peek * html .chunk_body { width: 282px; height: 60px; padding: 14px; float: left; display: block; overflow: hidden; background: #000; }
+					.peek .chunk_body p.upd_pic { width: 107px; padding: 0px 14px 0px 0px; float: left; }
+					* html .peek .chunk_body p.upd_pic { width: 107px; padding: 0px 8px 0px 0px; float: left; }
+					.peek .chunk_body p.upd_pic img { display: block; }
+					.peek .chunk_body p.upd_cat { padding: 0px 0px 3px 0px; }
+					.peek .chunk_body h2 a,
+					.peek .chunk_body p.upd_cat a { color: #191919; }

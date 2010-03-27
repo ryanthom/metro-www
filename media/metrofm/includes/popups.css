@@ -1,0 +1,47 @@
+/* ----------------------------------------------------------------------------------------------------------------------- */
+/*	AWESOME PLAYER & CAM POP UPS						   																   */
+
+	.uber_close a.close { width: 48px; float: right; padding: 0px 5px 0px 0px; margin: 17px 20px 0px 0px; background: url('../images/icon-popup_close.gif') right no-repeat; color: #fff; }
+
+	.uber_popop { width: 700px; float: left; color: #666; text-align: left; position: relative; background:#e2e2e2;}
+		.uber_popup h1.listen { width: 672px; float: left; height: 44px; padding: 0px 14px; background: #151515 url('../images/listen-live_header.jpg') no-repeat; }
+		.uber_popup h1.studio-cam { width: 672px; float: left; height: 44px; padding: 0px 14px; background: #151515 url('../images/studio-cam_header.jpg') no-repeat; }
+		.uber_head { width: 700px; height: 136px; float: left; margin: 0px!important; background: url('../images/bg.jpg') repeat-x; }
+		.uber_body { width: 640px; float: left; padding: 20px 30px; background:#e2e2e2; }
+			.uber_body .chunk_body p.upd_pic { float:left; padding:0 14px 0 0; width:107px; }
+			.uber_controls { width: 640px; height: 62px; float: left; margin: 0px 0px 20px 0px; background: #fff; }
+			/* Listen Live */
+			.uber_body .updates { width: 640px; float: left; margin: 0px; background: #151515; position: relative; }
+			.uber_body .updates h1 { float: left; padding: 0px 21px 0px 14px; background: url('../images/updates_header') no-repeat; text-transform:none; width:96px; }
+				.uber_body #slider { width: 640px; margin: 0px auto; position: relative; overflow: hidden; }
+				.uber_body .scroll_nav { width: 66px; position: relative; margin: 0px auto; } /* edit for re-skinning */
+				.uber_body .scroll { width: 640px; overflow: auto; overflow-x: hidden; position: relative; float: left; }
+				.uber_body .panel { width: 640px; float: left; overflow: hidden; }
+					.uber_body .chunk_tray { width: 640px; float: left; border: 0; }
+					.uber_body .chunk_item { width: 640px; float: left; border-bottom: 1px solid #e2e2e2; background: #fff; }
+						.uber_body .chunk_body { width: 612px; min-height: 60px; padding: 11px; float: left; display: block; }
+						.uber_body * html .chunk_body { width: 612px; height: 60px; padding: 14px; float: left; display: block; overflow: hidden; }
+			/* Studio Cam */
+		    .uber_left #gallery img { display: block; width: 301px; }
+    		.uber_left #thumbs { width: 207px!important; }
+            .uber_left #thumbs ul li { padding:11px 10px 0; }
+			.uber_left { width: 310px; float: left; }
+				.uber_cam { width: 310px; float: left; border-bottom: 1px solid #242424; }
+				.uber_cam img { display: block; }
+				.uber_cam_nav { width: 310px; float: left; background: #242424; }
+				.uber_cam_nav p { float: left; padding: 14px 0px 14px 14px; }
+				.uber_cam_nav p a img { display: block; }
+				#cam2 { display: none; }
+			.uber_right { width: 310px; float: right; }
+				.uber_right .updates { width: 310px; float: left; margin: 0px; background: #151515; position: relative; }
+				.uber_right .updates h1 { float: left; padding: 0px 21px 0px 14px; background: url('../images/updates_header') no-repeat; }
+					.uber_right #slider { width: 310px; margin: 0px auto; position: relative; overflow: hidden; }
+					.uber_right .scroll { width: 310px; overflow: auto; overflow-x: hidden; position: relative; float: left; }
+					.uber_right .panel { width: 310px; float: left; overflow: hidden; }
+						.uber_right .chunk_tray { width: 310px; float: left; border: 0; }
+						.uber_right .chunk_item { width: 310px; float: left; border-bottom: 1px solid #E2E2E2; }
+							.uber_right .chunk_body { width: 295px; min-height: 60px; padding: 14px; float: left; display: block; }
+							.uber_right * html .chunk_body { width: 310px; height: 60px; padding: 14px; float: left; display: block; overflow: hidden; }
+		.uber_foot { width: 700px; float: left; margin: 0px!important; }
+		.uber_foot .legal { float: left; padding: 15px 0 0 15px; margin:0 0 00; display:block; }
+		

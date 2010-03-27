@@ -1,0 +1,121 @@
+/* ----------------------------------------------------------------------------------------------------------------*/
+/* ---------->>> global settings needed for thickbox <<<-----------------------------------------------------------*/
+/* ----------------------------------------------------------------------------------------------------------------*/
+*{padding: 0; margin: 0;}
+
+/* ----------------------------------------------------------------------------------------------------------------*/
+/* ---------->>> thickbox specific link and font settings <<<------------------------------------------------------*/
+/* ----------------------------------------------------------------------------------------------------------------*/
+#TB_window {
+	font: 12px Arial, Helvetica, sans-serif;
+	color: #333333;
+}
+
+#TB_secondLine {
+	font: 10px Arial, Helvetica, sans-serif;
+	color:#666666;
+}
+
+#TB_window a:link {color: #292929;}
+#TB_window a:visited {color: #292929;}
+#TB_window a:hover {color: #666666; text-decoration: none;}
+#TB_window a:active {color: #292929;}
+#TB_window a:focus{color: #292929;}
+
+/* ----------------------------------------------------------------------------------------------------------------*/
+/* ---------->>> thickbox settings <<<-----------------------------------------------------------------------------*/
+/* ----------------------------------------------------------------------------------------------------------------*/
+#TB_overlay {
+	position: fixed;
+	z-index:102;
+	top: 0px;
+	left: 0px;
+	height:100%;
+	width:100%;
+}
+
+.TB_overlayMacFFBGHack {background: url('../images/macFFBgHack.png') repeat;}
+.TB_overlayBG {
+	background-color:#333;
+	filter:alpha(opacity=75);
+	-moz-opacity: 0.75;
+	opacity: 0.75;
+}
+
+* html #TB_overlay { /* ie6 hack */
+     position: absolute;
+     height: expression(document.body.scrollHeight > document.body.offsetHeight ? document.body.scrollHeight : document.body.offsetHeight + 'px');
+}
+
+#TB_window {
+	position: fixed;
+	/*position: fixed;*/
+	display:none;
+	z-index: 102;
+	top:50%;
+	left:50%;
+}
+
+* html #TB_window { /* ie6 hack */
+position: absolute;
+margin-top: expression(0 - parseInt(this.offsetHeight / 2) + (TBWindowMargin = document.documentElement && document.documentElement.scrollTop || document.body.scrollTop) + 'px');
+}
+
+#TB_window img#TB_Image {}
+
+#TB_caption{}
+
+#TB_closeWindow{}
+
+#TB_closeAjaxWindow{}
+
+#TB_ajaxWindowTitle{}
+
+#TB_title{}
+
+#TB_iframeContent,
+#TB_ajaxContent {
+	overflow:auto;
+	float: left;
+	line-height:1.4em;
+	position: relative;
+}
+
+#TB_ajaxContent.TB_modal{}
+
+#TB_ajaxContent p{}
+
+#TB_load{
+	position: fixed;
+	display:none;
+	height:13px;
+	width:208px;
+	z-index:103;
+	top: 50%;
+	left: 50%;
+	margin: -6px 0 0 -104px; /* -height/2 0 0 -width/2 */
+}
+
+* html #TB_load { /* ie6 hack */
+position: absolute;
+margin-top: expression(0 - parseInt(this.offsetHeight / 2) + (TBWindowMargin = document.documentElement && document.documentElement.scrollTop || document.body.scrollTop) + 'px');
+}
+
+#TB_HideSelect{
+	z-index:99;
+	position:fixed;
+	top: 0;
+	left: 0;
+	background-color:#fff;
+	border:none;
+	filter:alpha(opacity=0);
+	-moz-opacity: 0;
+	opacity: 0;
+	height:100%;
+	width:100%;
+}
+
+* html #TB_HideSelect { /* ie6 hack */
+     position: absolute;
+     height: expression(document.body.scrollHeight > document.body.offsetHeight ? document.body.scrollHeight : document.body.offsetHeight + 'px');
+}

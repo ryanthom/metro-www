@@ -1,0 +1,65 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html>
+<head>
+	<title>Report Commenting Abuse - Broadcast CMS</title>
+</head>
+
+<body>
+ <script src="http://static.ak.connect.facebook.com/js/api_lib/v0.4/FeatureLoader.js.php/en_US" type="text/javascript"></script><script type="text/javascript">FB.init("a3fa74dcb091d47e9942e054d5625d47");</script>	
+<script type="text/javascript">
+	jQuery().ready(function() {
+		jQuery(".shift").click(function () {
+    	  jQuery(this).css({'background-position' : '0px -27px'});
+		  jQuery(this).find("input").css({'color' : '#000'});
+  		});
+		jQuery(".shift").select(function () {
+    	  jQuery(this).css({'background-position' : '0px -27px'});
+		  jQuery(this).find("input").css({'color' : '#000'});
+  		});
+		jQuery(".shift input").blur(function () {
+     	 jQuery(".shift").css({'background-position' : '0px 0px'});
+		 jQuery(this).css({'color' : '#000'});
+   	 	});
+	});
+	</script>
+	<div class="modal">
+	
+		<div class="modal_title">
+			<h1>Report Commenting Abuse</h1>
+			<p><a href="javascript: void(0);" onclick="tb_remove()" id="TB_closeWindowButton" class="close">Close</a></p>
+			<p class="modal_intro">Help us remove unwanted comments on this site</p>
+		</div>
+		
+		<form id="frmReportAbuse" action="#" class="cmxform">
+			<div class="modal_row">
+				<label for="firstname">Name:</label>
+				<p class="text_input_short shift"><input type="text" id="firstname" name="firstname" class="required" /></p>
+				<p class="text_input_short no-marg shift"><input type="text" id="surname" name="surname" class="required" /></p>
+				<p class="text_idea">(First Name and Last)</p>
+			</div>
+			<div class="modal_row">
+				<label for="email">Email:</label>
+				<p class="text_input shift"><input type="text" id="email" name="email" class="required email" /></p>
+				<p class="text_idea">(We will send you account notices here - so make sure its good.)</p>
+			</div>
+			<div class="modal_row">
+				<label for="spamcode">Human?</label>
+				<p class="text_input_short shift"><input type="text" id="spamcode" name="spamcode" class="required" /></p>
+				<p class="text_input_short no-marg no-bg"><span><img src="media/metrofm/images/examples/spam.jpg" width="55" height="27" alt="" /></span><span><img src="media/metrofm/images/forms/btn-question.jpg" width="17" height="29" alt="" /></span></p>
+				<p class="text_idea">(Spam prevention code.)</p>
+			</div>
+			<div class="modal_row">
+				<p class="label">Offending Comment:</p>
+				<div class="offending_comment">
+					<p>I don't think it has anything to do with marketing. The price for the tickets are just too much considering the rate ofunemployment in the country & the current economic situation.</p>
+				</div>
+			</div>
+			<ul class="modal_buttons">
+				<li><input type="image" src="media/metrofm/images/forms/btn-report.jpg" name="submit" /></li>
+			</ul>
+		</form>
+	
+	</div><!--/MODAL-->
+</body>
+</html>
